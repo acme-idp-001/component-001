@@ -33,6 +33,8 @@ spec:
       params:
         - name: IMAGE
           value: $(params.output-image)
+        - name: DOCKERFILE
+          value: src/main/docker/Dockerfile.jvm
       runAfter:
         - git-clone
       taskRef:
